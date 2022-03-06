@@ -1,0 +1,25 @@
+{
+  "name": "fontawesomev6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "crawl": "nodemon crawler.js",
+    "load": "nodemon loadSvg.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "^3.10.0",
+      "@types/node": "^17.0.13",
+      "prisma": "^3.8.1",
+      "ts-node": "^10.4.0",
+      "typescript": "^4.5.5",
+      "express": "^4.17.3",
+      "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Download svg Fontawesome",
+    "version": "0.1",
+    "action": {
+        "default_icon": "./logo/logo.png"
+    },
+    "description": "Get svg Fontawesome free",
+    "icons": {
+        "128": "./logo/logo.png"
+    },
+    "author": "Ily1606",
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.fontawesome.com/*"
+            ],
+            "js": [
+                "./js/content.js"
+            ]
+        }
+    ],
+    "permissions": ["tabs"]
+}
